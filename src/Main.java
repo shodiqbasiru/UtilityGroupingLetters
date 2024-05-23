@@ -26,7 +26,7 @@ public class Main {
         System.out.println(output);
     }
 
-    public static String groupLetters(String[] letters) {
+    private static String groupLetters(String[] letters) {
         Map<Character, Integer> map = getCharacterIntegerMap(letters);
 
         Stream<Map.Entry<Character, Integer>> sorted = map.entrySet().stream()
